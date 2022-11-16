@@ -1,37 +1,31 @@
 <template>
   <div>
-    <p>{{ title }}</p>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id" @click="increment">
-        {{ todo.id }} - {{ todo.content }}
-      </li>
-    </ul>
-    <p>Count: {{ todoCount }} / {{ meta.totalCount }}</p>
-    <p>Active: {{ active ? 'yes' : 'no' }}</p>
-    <p>Clicks on todos: {{ clickCount }}</p>
+    <div class="flex">
+      <fr-input v-model="value" :value="value" />
+      <fr-button
+        :label="'Искать'"
+        :left-icon="{
+          name: 'search',
+        }"
+      />
+    </div>
+    <fr-linear-progress :value="value" />
+    <fr-dropbox />
+    <div class="q-pa-lg flex flex-center">
+      <fr-pagination />
+    </div>
+    <q-skeleton type="linear-progress" />
+    <fr-toggle />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import { Todo, Meta } from './models';
-
-interface Props {
-  title: string;
-  todos?: Todo[];
-  meta: Meta;
-  active: boolean;
-}
-const props = withDefaults(defineProps<Props>(), {
-  todos: () => [],
-});
-
-const clickCount = ref(0);
-function increment() {
-  clickCount.value += 1;
-  return clickCount.value;
-}
-
-const todoCount = computed(() => props.todos.length);
-
+import FrButton from 'components/atoms/VnButton/FrButton.vue';
+import FrInput from 'components/atoms/VnInput/FrInput.vue';
+import FrPagination from 'components/atoms/VnPagination/FrPagination.vue';
+import FrDropbox from 'components/atoms/VnDropbox/FrDropbox.vue';
+import FrLinearProgress from 'components/atoms/VnLinearProgress/FrLinearProgress.vue';
+import { ref } from 'vue';
+import FrToggle from 'components/atoms/VnToggle/FrToggle.vue';
+const value = ref('');
 </script>
