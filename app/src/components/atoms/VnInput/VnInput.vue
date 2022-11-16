@@ -1,9 +1,9 @@
 <template>
-  <q-input borderless clearable value="value" class="fr-input" />
+  <q-input borderless clearable value="value" class="vn-input" />
 </template>
 
 <script setup lang="ts">
-export interface FrButtonProps {
+export interface VnInputProps {
   label?: string;
   value?: string;
   size?: 'S' | 'M' | 'L';
@@ -11,7 +11,7 @@ export interface FrButtonProps {
   loading?: boolean;
   disabled?: boolean;
 }
-withDefaults(defineProps<FrButtonProps>(), {
+withDefaults(defineProps<VnInputProps>(), {
   label: '',
   size: 'M',
   style: 'primary',
@@ -21,7 +21,7 @@ withDefaults(defineProps<FrButtonProps>(), {
 </script>
 
 <style scoped lang="scss">
-.fr-input {
+.vn-input {
   width: 500px;
   font-size: 20px;
   padding-left: 10px;

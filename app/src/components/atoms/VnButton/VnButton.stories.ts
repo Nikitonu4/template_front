@@ -32,7 +32,7 @@ const Template: Story<VnButtonProps> = (args: VnButtonProps) => ({
   setup() {
     return { args };
   },
-  template: '<fr-button v-bind="args" />',
+  template: '<VnButton v-bind="args" />',
 });
 
 export const Primary = Template.bind({});

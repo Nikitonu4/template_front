@@ -1,20 +1,20 @@
 <template>
-  <q-checkbox class="fr-checkbox" :val="value" :label="label" />
+  <q-checkbox class="vn-checkbox" :val="value" :label="label" />
 </template>
 
 <script setup lang="ts">
-interface FrCheckboxProps {
+interface VnCheckboxProps {
   label?: string;
   value: never;
 }
 
-withDefaults(defineProps<FrCheckboxProps>(), {
+withDefaults(defineProps<VnCheckboxProps>(), {
   label: '',
 });
 </script>
 
 <style scoped lang="scss">
-.fr-checkbox {
+.vn-checkbox {
   :deep(.q-checkbox__inner::before) {
     display: none;
   }

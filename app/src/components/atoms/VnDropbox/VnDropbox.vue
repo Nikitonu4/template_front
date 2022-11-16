@@ -1,15 +1,15 @@
 <template>
   <q-btn-dropdown
     no-caps
-    class="fr-dropbox"
+    class="vn-dropbox"
     unelevated
     :ripple="false"
     :menu-offset="menuOffset"
     :padding="paddingBtn"
-    content-class="fr-dropbox__content"
+    content-class="vn-dropbox__content"
   >
     <template #label>
-      <div class="fr-dropbox__label">
+      <div class="vn-dropbox__label">
         {{ label }}
       </div>
     </template>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-interface FrDropboxProps {
+interface VnDropboxProps {
   label?: string;
   size?: 'S' | 'M' | 'L';
   style?: 'primary' | 'secondary' | 'outline';
@@ -36,7 +36,7 @@ interface FrDropboxProps {
   paddingBtn?: string;
 }
 
-withDefaults(defineProps<FrDropboxProps>(), {
+withDefaults(defineProps<VnDropboxProps>(), {
   label: '',
   size: 'M',
   style: 'primary',
@@ -46,7 +46,7 @@ withDefaults(defineProps<FrDropboxProps>(), {
 </script>
 
 <style lang="scss">
-.fr-dropbox {
+.vn-dropbox {
   &__label {
     font-weight: 400;
   }

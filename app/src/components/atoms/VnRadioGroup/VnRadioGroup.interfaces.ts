@@ -1,3 +1,3 @@
-export interface VnInputProps {
+export interface VnRadioGroupProps {
 
 }
