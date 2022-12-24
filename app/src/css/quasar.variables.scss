@@ -1,25 +1,36 @@
-// Quasar SCSS (& Sass) Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+// BASIC
+$black: #0A0A0D;
+$white: #FFF;
 
-// Check documentation for full list of Quasar variables
+// YELLOW
+$yellow: #F8C231;
+$yellow-light: #F8C231;
 
-// Your own variables (that are declared here) and Quasar's own
-// ones will be available out of the box in your .vue/.scss/.sass files
+// RED
+$red: #FF445E;
+$red-light: #FFC5CF;
+$pink: rgba(255, 90, 209, 0.9);
+$pink-light: rgba(255, 233, 250, 1);
 
-// It's highly recommended to change the default colors
-// to match your app's branding.
-// Tip: Use the "Theme Builder" on Quasar's documentation website.
+// GREEN
+$green: rgba(0, 187, 131, 0.8);
+$green-light: #BEFFEC;
 
-$primary   : #1976D2;
-$secondary : #26A69A;
-$accent    : #9C27B0;
+// BLUE
+$blue: rgba(5, 96, 255, 0.8);
+$blue-light: #B7F2FF;
+$purple: rgba(77, 62, 255, 0.9);
 
-$dark      : #1D1D1D;
-$dark-page : #121212;
+// ORANGE
+$orange: rgba(255, 105, 40, 0.8);
+$orange-light: #FFE5D7;
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+// TEXT
+// LIGHT THEME
+$light-primary-text: #22242C;
+$light-gray-text: rgba(74, 87, 111, 0.7);
+$light-gray-100-text: rgba(48, 52, 77, 0.2);
+// DARK THEME
+$dark-primary-text: #ECEDEE;
+$dark-gray-text: rgba(114, 120, 136, 0.6);
+$dark-gray-100-text: rgba(255, 255, 255, 0.2);

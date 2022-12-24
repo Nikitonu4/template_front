@@ -45,12 +45,12 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     'no-unused-vars': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'vue/component-name-in-template-casing': [
-      'error',
-      'kebab-case',
-      {
-        registeredComponentsOnly: true,
-      },
-    ],
+    // 'vue/component-name-in-template-casing': [
+    //   'error',
+    //   'PascalCase',
+    //   {
+    //     registeredComponentsOnly: true,
+    //   },
+    // ],
   },
 };

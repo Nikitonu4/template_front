@@ -1,6 +1,6 @@
 <template>
   <q-select
-    class="fr-select"
+    class="vm-select"
     :label="label"
     rounded
     options="options"
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-export interface FrSelectProps {
+export interface VnSelectProps {
   label?: string;
   options: any;
   autocomplete?: any;
@@ -21,7 +21,7 @@ export interface FrSelectProps {
   loading?: boolean;
   disabled?: boolean;
 }
-withDefaults(defineProps<FrSelectProps>(), {
+withDefaults(defineProps<VnSelectProps>(), {
   label: '',
   size: 'M',
   style: 'primary',
@@ -31,6 +31,6 @@ withDefaults(defineProps<FrSelectProps>(), {
 </script>
 
 <style scoped lang="scss">
-.fr-select {
+.vn-select {
 }
 </style>

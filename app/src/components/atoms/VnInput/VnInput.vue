@@ -1,5 +1,5 @@
 <template>
-  <q-input borderless clearable value="value" class="vn-input" />
+  <q-input label-color="white" borderless clearable :label="label" :value="value" class="vn-input" />
 </template>
 
 <script setup lang="ts">
@@ -22,12 +22,12 @@ withDefaults(defineProps<VnInputProps>(), {
 
 <style scoped lang="scss">
 .vn-input {
-  width: 500px;
+  width: 100%;
   font-size: 20px;
-  padding-left: 10px;
-  border-radius: 6px 0 0 6px !important;
-  height: 60px;
-  //color: #fff;
+  padding: 10px 20px;
+  border-radius: 24px !important;
+  //height: 60px;
+  color: #fff;
   font-weight: 600;
   border: 3px solid #000000;
 }
